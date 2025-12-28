@@ -1,0 +1,46 @@
+# -----------------------------
+# Ignore everything by default
+# -----------------------------
+*
+!*/
+
+# -----------------------------
+# Always keep gitignore files
+# -----------------------------
+!.gitignore
+
+# -----------------------------
+# Source files
+# -----------------------------
+!*.py
+!*.md
+!*.toml
+!*.json
+!*.yaml
+!*.yml
+
+# -----------------------------
+# Python / uv config
+# -----------------------------
+!.python-version
+!uv.lock
+!pyproject.toml
+
+# -----------------------------
+# Documentation / metadata
+# -----------------------------
+!README*
+!LICENSE*
+
+# -----------------------------
+# Docker / infra
+# -----------------------------
+!Dockerfile
+!docker-compose.yml
+!docker-compose.yaml
+
+# -----------------------------
+# CI / tooling
+# -----------------------------
+!.github/
+!.github/**
