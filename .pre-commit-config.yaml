@@ -1,0 +1,28 @@
+repos:
+  # -------- Python (ruff) --------
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  # -------- Python (ty) --------
+  - repo: local
+    hooks:
+      - id: ty-check
+        name: ty type check
+        entry: ty check
+        language: system
+        types: [python]
+        pass_filenames: false
+
+  # -------- TypeScript --------
+  - repo: local
+    hooks:
+      - id: tsc-typecheck
+        name: TypeScript type check
+        entry: bun run typecheck
+        language: system
+        types: [ts, tsx]
+        pass_filenames: false
