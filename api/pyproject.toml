@@ -10,3 +10,17 @@ dependencies = [
     "ruff>=0.14.10",
     "ty>=0.0.7",
 ]
+
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+  "ANN",   # type annotations
+]
+
+ignore = [
+  "ANN101",  # allow missing self annotation
+  "ANN102",  # allow missing cls annotation
+]
