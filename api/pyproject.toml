@@ -19,8 +19,3 @@ target-version = "py312"
 select = [
   "ANN",   # type annotations
 ]
-
-ignore = [
-  "ANN101",  # allow missing self annotation
-  "ANN102",  # allow missing cls annotation
-]
